@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <link rel='stylesheet' type='text/css' href="{{ asset('assets/base/js/libs/bootstrap/css/bootstrap.css') }}" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="{{ asset('assets/home/cartegrise.css') }}">
+    <title></title>
+    <style>
+          @media only screen and (max-width:400px;) {
+              div.boite_princ {
+                padding-left: 0.5rem!important;
+                padding-right: 0.5rem!important;
+              }
+              .row.choix {
+                padding-left: 0!important;
+                padding-right: 0!important;
+              }
+          }
+    </style>
+    <!--<link rel="stylesheet" href="cartegrise.css">-->
+  </head>
+  <body class="">
+    <!---voici le new header-------------------------->
+      <header class="new_head">
+              <nav class="navbar navbar-expand-lg navbar-light mx-auto bg-white px-3 py-0">
+                  <a class="navbar-brand" href="{{path('cartegrise')}}"> <img src="{{ asset('assets/home/images/eirl.png') }}" class="img-fluid" width="120" height="120" alt=""></a>
+                  <button class="navbar-toggler bg-secondary mr-3" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                      <ul class="navbar-nav mx-auto">
+                          <li class="nav-item mx-1 dropdown">
+                              <!--<a class="nav-link dropdown-toggle cartegrise active" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Carte grise <span class="sr-only">(current)</span>
+                              </a>-->
+                              <a class="nav-link" href="{{ path('cartegrise') }}">Carte grise</a>
+                              <!--<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#"></a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                              </div>-->
+                              <div class="selection px-2 pt-1 bg-white border mt-3" style="width:500px!important;">
+                                  <p class="text-justify font-weight-normal border-bottom g_titre py-2">Démarches</p>
+                                  <ul class="p-0 mt-3">
+                                    <li class="selection_liste font-weight-light py-2">Première immatriculation en France d'un véhicule</li>
+                                    <li class="selection_liste font-weight-light py-2">Immatriculation d'un véhicule d'occasion (changement de titulaire du certificat)</li>
+                                    <li class="selection_liste font-weight-light py-2">Duplicata - véhicule SIV (immatriculation type "AB-123-CD")</li>
+                                    <li class="selection_liste font-weight-light py-2">Duplicata - véhicule FNI (ancienne immatriculation de type "1234 AB 01")</li>
+                                    <li class="selection_liste font-weight-light py-2">Changement d'adresse</li>
+                                    <li class="selection_liste font-weight-light py-2">Changement d'état matrimonial (mariage,divorce,veuvage)</li>
+                                    <li class="selection_liste font-weight-light py-2">Correction d'erreur de saisie sur le certificat du fait de l'administration</li>
+                                    <li class="selection_liste font-weight-light py-2">Usurpation du numéro d'immatriculation du véhicule</li>
+
+                                  </ul>
+                              </div>
+                          </li>
+                          <li class="nav-item mx-1">
+                              <a class="nav-link" href="#">Certificat de session</a>
+                          </li>
+                          <li class="nav-item mx-1">
+                              <a class="nav-link contact" href="{{ path('contact') }}">Contact</a>
+                          </li>
+                          <li class="nav-item mx-1">
+                              <a class="nav-link" href="#">Notre mission</a>
+                          </li>
+                          <li class="nav-item mx-1">
+                              <a class="nav-link" href="#">Plaque d'immatriculation</a>
+                          </li>
+                          <li class="nav-item mx-1">
+                              <a class="nav-link connexion" href="{{ path('connexion') }}"><span>Connexion</span><i class=""></i></a>
+                          </li>
+                      </ul>
+                  </div>
+              </nav>
+      </header>
+      <!--Voici la partie backheader en 2 coté----------------------------------------------->
+      <div class="container-fluid boite_princ px-4">
+          <div class="row debut">
+              <div class="col-md-12 col-lg-12 back_info">
+                  <!--<p class="h2 font-weight-normal g_titre">Faite votre carte grise et vos plaques en 2min</p>
+                  <p class="text-justify font-weight-light my-4">Plateforme d'immatriculation depuis 2009.
+                              Nous avons reçu une double habilitation de l'Etat pour vous proposer un service
+                                d'immatriculation
+                  </p>-->
+                  <p class="h2 text-justify text-center font-weight-normal my-4 g_titre ml-3">Démarches</p>
+                  <!--<p class="text-justify font-weight-light">Lorsque le certificat  d'immatriculation est demandé pour plusieurs motifs, c'est le motif qui entraîne le coût le plus élevé qui est pris en compte </p>-->
+                  <p class="h4 text-justify text-center font-weight-light ml-3">Sélectionnez votre démarche</p>
+                  <!--<p class="h2 text-justify font-weight-normal g_titre">Démarches</p>
+                  <p class=" font-weight-normal my-3">Sélectionnez votre démarches <i class="fas fa-caret-down fa-1x drop_icon"></i></p>
+                -->
+              </div>
+          </div>
+          <div class="row choix px-5">
+              <div class="col-md-6 col-lg-6 back_info">
+                  <ul class="mx-0 px-0">
+                    <li id="demarche">Première immatriculation en France d'un véhicule</li>
+                    <li id="demarche">Immatriculation d'un véhicule d'occasion (changement de titulaire du certificat)</li>
+                    <li id="demarche">Duplicata - véhicule SIV (immatriculation type "AB-123-CD")</li>
+                    <li id="demarche">Duplicata - véhicule FNI (ancienne immatriculation de type "1234 AB 01")</li>
+                    <li id="demarche">Changement d'adresse</li>
+                    <li id="demarche">Changement d'état matrimonial (mariage,divorce,veuvage)</li>
+                    <li id="demarche">Correction d'erreur de saisie sur le certificat du fait de l'administration</li>
+                    <li id="demarche">Usurpation du numéro d'immatriculation du véhicule</li>
+                    <li id="demarche">Utilisation de toutes les cases réservés pour les contrôles techniques</li>
+                  </ul>
+              </div>
+              <div class="col-md-6 col-lg-6 back_info">
+                  <ul class="mx-0 px-0">
+                    <li id="demarche">Modification des caractéristiques techniques du véhicule</li>
+                    <li id="demarche">Modification de l'usage du véhicule</li>
+                    <li id="demarche">Changement d'état civil</li>
+                    <li id="demarche">Changement de dénomination sociale d'une entreprise ou d'une association</li>
+                    <li id="demarche">Certificat W garage</li>
+                    <li id="demarche">Passage en véhicule de collection</li>
+                    <li id="demarche">Héritage(hors veuvage) d'un véhicule</li>
+                    <li id="demarche">Achat par locataire suite leasing</li>
+                    <li id="demarche">Ajout d'un autre propriétaire</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="row debut mt-4 mb-">
+              <div class="col-md-12 col-lg-12 back_info">
+                  <p class="h2 font-weight-normal g_titre text-center">Faite votre carte grise et vos plaques en 2min</p>
+                  <p class="h4 text-justify font-weight-light text-center my-4">Plateforme d'immatriculation depuis 2009.
+                              Nous avons reçu une double habilitation de l'Etat pour vous proposer un service
+                                d'immatriculation
+                  </p>
+                  <!--<p class="text-justify font-weight-light">Lorsque le certificat  d'immatriculation est demandé pour plusieurs motifs, c'est le motif qui entraîne le coût le plus élevé qui est pris en compte </p>-->
+                  <!--<p class="h2 text-justify font-weight-normal g_titre">Démarches</p>
+                  <p class=" font-weight-normal my-3">Sélectionnez votre démarches <i class="fas fa-caret-down fa-1x drop_icon"></i></p>
+                -->
+              </div>
+          </div>
+          <div class="row ">
+            <div class="col-md-3 d-flex flex-column py-2">
+                <div class="">
+                  <i class="fas fa-hand-holding-usd text-center fa-3x mx-auto d-block logo_cards"></i>
+                </div>
+                <div class="py-1">
+                    <h6 class="text-center">Calculez le prix</h6>
+                </div>
+                <div class="">
+                    <h6 class="text-center font-italic"><small>Inscrivez votre numero <br>
+                        d'immatriculation afin de calculer <br>
+                        le prix de votre carte grise en <br>
+                        quelques seconde
+                    </small></h6>
+                </div>
+            </div>
+            <div class="col-md-3 py-2">
+                <div class="">
+                  <i class="fab fa-wpforms text-center fa-3x mx-auto d-block logo_cards"></i>
+                </div>
+                <div class="py-1">
+                    <h6 class="text-center">Validez vos formulaires</h6>
+                </div>
+                <div class="">
+                    <h6 class="text-center font-italic"><small>Nous vous offrons la possibilité de <br>
+                        créer gratuitement vos documents <br>
+                        cerfa préremplis en quelques clics <br>
+
+                    </small></h6>
+                </div>
+            </div>
+            <div class="col-md-3 py-2">
+                <div class="">
+                  <i class="fas fa-car fa-3x text-center mx-auto d-block logo_cards"></i>
+                </div>
+                <div class="py-1">
+                    <h6 class="text-center">Roulez immédiatement</h6>
+                </div>
+                <div class="">
+                    <h6 class="text-center font-italic"><small>La carte grise originale est envoyée <br>
+                        en courrier recommandée par <br>
+                        l'imprimerie Nationale sous 2 à 4 <br>
+                        jours
+                    </small></h6>
+                </div>
+            </div>
+            <div class="col-md-3 py-2">
+                <div class="">
+                  <i class="fas fa-home fa-3x text-center mx-auto d-block logo_cards"></i>
+                </div>
+                <div class="py-1">
+                    <h6 class="text-center">La commande chez vous</h6>
+                </div>
+                <div class="">
+                    <h6 class="text-center font-italic"><small>Inscrivez votre numero <br>
+                        d'immatriculation afin de calculer <br>
+                        le prix de votre carte grise en <br>
+                        quelques seconde
+                    </small></h6>
+                </div>
+            </div>
+          </div>
+
+          <!----- POUR LE FORMULAIRE DE MAIL-------------------------->
+      </div>
+      <!---Formulaire de contact dans le menu COntact---->
+
+      <!-------la partie footer sahady------------------------------------------------------>
+      <footer class="container-fluid pt-5 px-5 pb-3 mt-5">
+          <div class="row pb-2 mx-auto">
+              <div class="col-md-4 px-0 py-0">
+                    <ul>
+                        <li class=" text-justify text-center text-light font-weight-light ligne">Carte grise</li>
+                        <li class=" text-justify text-center text-light font-weight-light ligne">Certificat de session</li>
+                        <li class=" text-justify text-center text-light font-weight-light ligne">Changement d'adresse</li>
+                    </ul>
+              </div>
+              <div class="col-md-4 px-0 py-0">
+                    <ul>
+                        <li class=" text-justify text-center text-light font-weight-light ligne">Changement de titulaire</li>
+                        <li class=" text-justify text-center text-light font-weight-light ligne">Demande de duplicata</li>
+                        <li class=" text-justify text-center text-light font-weight-light ligne">Plaque d'immatriculation</li>
+                    </ul>
+              </div>
+              <div class="col-md-4 px-0 py-0">
+                      <ul>
+                          <li class=" text-justify text-center text-light font-weight-light ligne">7744 North Park Place</li>
+                          <li class=" text-justify text-center text-light font-weight-light ligne">an Francisco, CA 714258</li>
+                          <li class=" text-justify text-center text-light font-weight-light ligne">support@canyonthemes.com</li>
+                          <li class=" text-justify text-center text-light font-weight-light ligne">777-444-2222</li>
+                      </ul>
+              </div>
+          </div>
+          <div class="py-3 border-top text-center">
+              <a href="#" class="mx-2"><i class="fab fa-facebook-square fa-2x text-white"></i></a>
+              <a href="#" class="mx-2"><i class="fab fa-instagram fa-2x text-white"></i></a>
+              <a href="#" class="mx-2"><i class="fab fa-twitter fa-2x text-white"></i></a>
+              <a href="#" class="mx-2"><i class="fab fa-youtube fa-2x text-white"></i></a>
+          </div>
+          <p class="text-center text-light font-weight-light p-3 ">Website produced and hosted by <strong class="text-light">Good-ID Communication</strong></p>
+      </footer>
+
+      <script type="text/javascript" src="{{ asset('assets/base/js/libs/jquery-3.4.1.js')}}"></script>
+      <script type="text/javascript" src="{{ asset('assets/base/js/libs/bootstrap/js/bootstrap.min.js')}}"></script>
+  </body>
+</html>

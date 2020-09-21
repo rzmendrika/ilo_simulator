@@ -1,0 +1,44 @@
+
+<header class="new_head">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white mx-auto px-1 py-0">
+        <a class="navbar-brand" href=""> <img src="{{ asset('assets/home/images/eirl.png') }}" class="img-fluid" width="120" height="120" alt=""></a>
+        <button class="navbar-toggler bg-secondary mr-3" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item mx-1 dropdown">
+                    <a class="nav-link" href="{{ path('cartegrise') }}">Carte grise</a>
+                    <div class="selection px-2 pt-1 bg-white border mt-3" style="width:500px!important;">
+                        <p class="text-justify font-weight-normal border-bottom g_titre py-2">Démarches</p>
+                        <ul class="p-0 mt-3">
+                            <li class="selection_liste font-weight-light py-2">Première immatriculation en France d'un véhicule</li>
+                            <li class="selection_liste font-weight-light py-2">Immatriculation d'un véhicule d'occasion (changement de titulaire du certificat)</li>
+                            <li class="selection_liste font-weight-light py-2">Duplicata - véhicule SIV (immatriculation type "AB-123-CD")</li>
+                            <li class="selection_liste font-weight-light py-2">Duplicata - véhicule FNI (ancienne immatriculation de type "1234 AB 01")</li>
+                            <li class="selection_liste font-weight-light py-2">Changement d'adresse</li>
+                            <li class="selection_liste font-weight-light py-2">Changement d'état matrimonial (mariage,divorce,veuvage)</li>
+                            <li class="selection_liste font-weight-light py-2">Correction d'erreur de saisie sur le certificat du fait de l'administration</li>
+                            <li class="selection_liste font-weight-light py-2">Usurpation du numéro d'immatriculation du véhicule</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item mx-1">
+                    <a class="nav-link" href="#">Certificat de session</a>
+                </li>
+                <li class="nav-item mx-1">
+                    <a class="nav-link contact" href="{{ path('contact') }}">Contact</a>
+                </li>
+                <li class="nav-item mx-1">
+                    <a class="nav-link" href="#">Notre mission</a>
+                </li>
+                <li class="nav-item mx-1">
+                    <a class="nav-link" href="#">Plaque d'immatriculation</a>
+                </li>
+                <li class="nav-item mx-1">
+                    <a class="nav-link connexion" href="{{ path('connexion') }}"><span>Connexion</span><i class=""></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>

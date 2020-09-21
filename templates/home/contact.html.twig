@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <link rel='stylesheet' type='text/css' href="{{ asset('assets/base/js/libs/bootstrap/css/bootstrap.css') }}" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="{{ asset('assets/home/cartegrise.css') }}">
+    <title></title>
+    <!--<link rel="stylesheet" href="cartegrise.css">-->
+  </head>
+  <body class="" style="min-height:100vh;">
+    <!---voici le new header-------------------------->
+      <header class="new_head">
+              <nav class="navbar navbar-expand-lg navbar-light bg-white mx-auto px-1 py-0">
+                  <a class="navbar-brand" href=""> <img src="{{ asset('assets/home/images/eirl.png') }}" class="img-fluid" width="120" height="120" alt=""></a>
+                  <button class="navbar-toggler bg-secondary mr-3" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                      <ul class="navbar-nav mx-auto">
+                          <li class="nav-item mx-1 dropdown">
+                              <!--<a class="nav-link dropdown-toggle cartegrise active" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Carte grise <span class="sr-only">(current)</span>
+                              </a>-->
+                              <a class="nav-link" href="{{ path('cartegrise') }}">Carte grise</a>
+                              <!--<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#"></a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                              </div>-->
+                              <div class="selection px-2 pt-1 bg-white border mt-3" style="width:500px!important;">
+                                  <p class="text-justify font-weight-normal border-bottom g_titre py-2">Démarches</p>
+                                  <ul class="p-0 mt-3">
+                                    <li class="selection_liste font-weight-light py-2">Première immatriculation en France d'un véhicule</li>
+                                    <li class="selection_liste font-weight-light py-2">Immatriculation d'un véhicule d'occasion (changement de titulaire du certificat)</li>
+                                    <li class="selection_liste font-weight-light py-2">Duplicata - véhicule SIV (immatriculation type "AB-123-CD")</li>
+                                    <li class="selection_liste font-weight-light py-2">Duplicata - véhicule FNI (ancienne immatriculation de type "1234 AB 01")</li>
+                                    <li class="selection_liste font-weight-light py-2">Changement d'adresse</li>
+                                    <li class="selection_liste font-weight-light py-2">Changement d'état matrimonial (mariage,divorce,veuvage)</li>
+                                    <li class="selection_liste font-weight-light py-2">Correction d'erreur de saisie sur le certificat du fait de l'administration</li>
+                                    <li class="selection_liste font-weight-light py-2">Usurpation du numéro d'immatriculation du véhicule</li>
+
+                                  </ul>
+                              </div>
+                          </li>
+                          <li class="nav-item mx-1">
+                              <a class="nav-link" href="#">Certificat de session</a>
+                          </li>
+                          <li class="nav-item mx-1">
+                              <a class="nav-link contact" href="{{ path('contact') }}">Contact</a>
+                          </li>
+                          <li class="nav-item mx-1">
+                              <a class="nav-link" href="#">Notre mission</a>
+                          </li>
+                          <li class="nav-item mx-1">
+                              <a class="nav-link" href="#">Plaque d'immatriculation</a>
+                          </li>
+                          <li class="nav-item mx-1">
+                              <a class="nav-link connexion" href="{{ path('connexion') }}"><span>Connexion</span><i class=""></i></a>
+                          </li>
+                      </ul>
+                  </div>
+              </nav>
+      </header>
+      <!--Voici la partie backheader en 2 coté----------------------------------------------->
+      <!---Formulaire de contact dans le menu COntact---->
+      <div class="container-fluid remplir my-4 px-5 py-4">
+            <div class="row"  style="margin-right:5%;margin-left:5%;">
+                  <div class="col-lg-6 col-md-6 mt-3 mb-3 pr-4">
+                          <p class="text-justify font-weight-normal h3 text-center text-danger mb-2">Contactez nous pour pouvoir mieux vous aider</p>
+                    <!--<div class="row form_contact p-4 border">-->
+                      <!--<div class="bg-warning p-3" style="max-width: 600px;">-->
+                          <p class="h2 text-justify font-weight-normal g_titre mb-4"></p>
+                          <form action="/action_page.php" class="needs-validation novalidate">
+                              <div class="form-group">
+                                  <label for="nom">Nom</label>
+                                  <input type="text" class="form-control" id="nom" placeholder="nom" name="nom" required>
+                                      <div class="invalid-feedback">Veuillez entrer votre nom</div>
+                              </div>
+                              <div class="form-group">
+                                  <label for="nom">Prenom</label>
+                                  <input type="text" class="form-control" id="nom" placeholder="prenom" name="nom" required>
+                                      <div class="invalid-feedback">Veuillez entrer votre prenom</div>
+                              </div>
+                              <div class="form-group">
+                                  <label for="email">Adresse Email</label>
+                                  <input type="email" class="form-control" id="email" placeholder="email" name="email" required>
+                                  <div class="invalid-feedback">Veuillez entrer votre email</div>
+                              </div>
+                              <div class="form-group">
+                                  <label for="exampleFormControlTextarea1">Votre Message</label>
+                                  <textarea class="form-control" style="height:150px;" id="exampleFormControlTextarea1" rows="3"></textarea>
+                              </div>
+                              <!--<div class="form-group form-check">
+                                  <label class="form-check-label">
+                                      <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                                  </label>
+                              </div>-->
+                              <button type="submit" class="btn btn-danger px-4 py-3 mx-auto d-block" style="border-radius:25px;">Confirmer</button>
+                          </form>
+                      <!--</div>-->
+                </div>
+                <div class="col-lg-6 col-md-6 mb-3 bg-secondary border rounded px-0 pb-0">
+                    <div class="py-3 bg-light">
+                        <p class="text-justify font-weight-normal h3 text-center text-danger mb-2 py-2">Location</p>
+                        <p class="text-justify fon-weight-light text-white py-1 pl-5 text-dark"><i class="far fa-map-marker-alt fa-3x mr-5 text-danger"></i><span class="text-center">localisation </span></p>
+                        <p class="text-justify fon-weight-light text-white py-1 pl-5 text-dark"><i class="fas fa-phone-alt fa-2x mr-5 text-danger"></i>telephone</p>
+                        <p class="text-justify fon-weight-light text-white py-1 pl-5 text-dark"><i class="fas fa-envelope fa-2x mr-5 text-danger"></i>contact mail</p>
+                    </div>
+                    <!--<div class="bg-info ">-->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7548.745924044795!2d47.54428399622185!3d-18.914878785038738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21f07d4804f1895f%3A0xc11db62c0365c997!2silo%20madagascar!5e0!3m2!1sfr!2smg!4v1600181219717!5m2!1sfr!2smg" class="embed-responsive-item w-100 fram" frameborder="0" style="border:0;height:340px;margin-bottom:0px!important;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <!--</div>-->
+                </div>
+            </div>
+          <!--</div>-->
+      </div>
+      <!-------la partie footer sahady------------------------------------------------------>
+      <footer class="container-fluid pt-5 px-5 pb-3 mt-5 ">
+          <div class="row pb-2 mx-auto">
+              <div class="col-md-4 px-0 py-0">
+                    <ul>
+                        <li class=" text-justify text-center text-light font-weight-light ligne">Carte grise</li>
+                        <li class=" text-justify text-center text-light font-weight-light ligne">Certificat de session</li>
+                        <li class=" text-justify text-center text-light font-weight-light ligne">Changement d'adresse</li>
+                    </ul>
+              </div>
+              <div class="col-md-4 px-0 py-0">
+                    <ul>
+                        <li class=" text-justify text-center text-light font-weight-light ligne">Changement de titulaire</li>
+                        <li class=" text-justify text-center text-light font-weight-light ligne">Demande de duplicata</li>
+                        <li class=" text-justify text-center text-light font-weight-light ligne">Plaque d'immatriculation</li>
+                    </ul>
+              </div>
+              <div class="col-md-4 px-0 py-0">
+                      <ul>
+                          <li class=" text-justify text-center text-light font-weight-light ligne">7744 North Park Place</li>
+                          <li class=" text-justify text-center text-light font-weight-light ligne">an Francisco, CA 714258</li>
+                          <li class=" text-justify text-center text-light font-weight-light ligne">support@canyonthemes.com</li>
+                          <li class=" text-justify text-center text-light font-weight-light ligne">777-444-2222</li>
+                      </ul>
+              </div>
+          </div>
+          <div class="py-3 border-top text-center">
+              <a href="#" class="mx-2"><i class="fab fa-facebook-square fa-2x text-white"></i></a>
+              <a href="#" class="mx-2"><i class="fab fa-instagram fa-2x text-white"></i></a>
+              <a href="#" class="mx-2"><i class="fab fa-twitter fa-2x text-white"></i></a>
+              <a href="#" class="mx-2"><i class="fab fa-youtube fa-2x text-white"></i></a>
+              <!--<i class=""></i>
+              <i class=""></i>
+              <i class=""></i>
+              <i class=""></i>-->
+          </div>
+          <p class="text-center text-light font-weight-light p-3 ">Website produced and hosted by <strong class="text-light">Good-ID Communication</strong></p>
+      </footer>
+
+      <script type="text/javascript" src="{{ asset('assets/base/js/libs/jquery-3.4.1.js')}}"></script>
+      <script type="text/javascript" src="{{ asset('assets/base/js/libs/bootstrap/js/bootstrap.min.js')}}"></script>
+  </body>
+</html>
